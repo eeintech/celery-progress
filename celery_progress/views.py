@@ -1,7 +1,7 @@
 import json
 from django.http import HttpResponse
 from celery.result import AsyncResult
-from celery_progress.backend import Progress
+from .backend import Progress
 from django.views.decorators.cache import never_cache
 
 @never_cache
